@@ -10,32 +10,49 @@
     <link rel="stylesheet" href="css/style.css">
     
     <!-- import js -->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </head>
 
-<body>
-    Hello, this is a very simple html file.
-    <br>
-    Let's build a cool web app!
-    <br>
-    <label class="container">Read
-        <input type="radio" checked="checked" name="radio">
+<body onload = "download('text.txt', 'whatever')">
+    
+    <label class="container" id = "el1">Read
+        <input type="checkbox" id = "i1" onclick="Draw('i1', 'c1')" name="radio">
+        <span class="box"></span>
         <span class="checkmark"></span>
+        <span class = "checkmarksolid" id = 'c1'></span>
+        <label class = "del">
+          <input type = "button" id="btn1" onclick="Delete(document.getElementById('el1'))">
+        </label>
       </label>
-      <label class="container">Meditate
-        <input type="radio" name="radio">
+      <label class="container" id = "el2">Meditate
+        <input type="checkbox" id = "i2" onclick = "Draw('i2', 'c2')" name="radio">
+        <span class="box"></span>
         <span class="checkmark"></span>
+        <span class = "checkmarksolid" id = 'c2'></span>
+        <label class = "del">
+          <input type = "button" id="btn2" onclick="Delete(document.getElementById('el2'))">
+        </label>
       </label>
-      <label class="container">Three
-        <input type="radio" name="radio">
+      <label class="container" id = "el3">Three
+        <input type="checkbox" id = "i3" onclick = "Draw('i3', 'c3')" name="radio">
+        <span class="box"></span>
         <span class="checkmark"></span>
+        <span class = "checkmarksolid" id = 'c3'></span>
+        <label class = "del">
+          <input type = "button" id="btn3" onclick="Delete(document.getElementById('el3'))">
+        </label>
       </label>
-      <label class="container">Four
-        <input type="radio" name="radio">
+      <label class="container" id = "el4">Four
+        <input type="checkbox" id = "i4" onclick = "Draw('i4', 'c4')" name="radio">
+        <span class="box"></span>
         <span class="checkmark"></span>
+        <span class = "checkmarksolid" id = 'c4'></span>
+        <label class = "del">
+          <input type = "button" id="btn4" onclick="Delete(document.getElementById('el4'))">
+        </label>
       </label>
       <form action="/url" method="GET">
-        <input type="text" name="name" placeholder="John Doe">
+        <input type="text" defaultValue = "stonk" id = "new" name="name" placeholder="Gym">
       </form>
     
 </body>
